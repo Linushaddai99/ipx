@@ -59,7 +59,7 @@ nav {
 .logo{
   width: 100%;
 }
-
+ 
 .nav-list {
   width: 100%;
   justify-content: flex-end;
@@ -68,7 +68,7 @@ nav {
 
 .call {
   position: fixed;
-  top: 90vh;
+  top: 80vh;
   right: 20px;
 }
 
