@@ -274,7 +274,7 @@ transform: scaleX(1);
 
 
 .service-section {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .desktop-services-display {
@@ -343,11 +343,13 @@ transform: scaleX(1);
 
 .notice i {
   font-size: 10px;
+  /* border: 1px solid red; */
 }
 
 .internet-solution-section {
   text-align: center;
   margin-bottom: 6rem;
+  /* border: 1px solid red; */
 }
 
 .internet-solution-section h3 {
