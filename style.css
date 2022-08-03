@@ -524,6 +524,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #2F354F;
+  font-size: 15px;
 }
 
 .footer-email {
@@ -586,6 +587,10 @@ footer {
 
 
 @media (max-width: 998px) {
+  p {
+    font-size: 14px;
+  }
+
   .nav-list{
     display: none;
   }
@@ -654,6 +659,10 @@ footer {
 
 @media (max-width: 779px) {
 
+  p {
+    font-size: 14px;
+  }
+
   nav {
     max-width: 90%;
     margin: 0 auto;
@@ -693,7 +702,7 @@ footer {
 @media (max-width: 475px) {
 
   p {
-    font-size: .8rem;
+    font-size: 14px;
   }
 
   .container {
