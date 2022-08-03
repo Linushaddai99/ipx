@@ -189,7 +189,7 @@ transform: scaleX(1);
 .welcome-section {
   text-align: center;
   margin-bottom: 150px;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 .welcomeAnima{
@@ -342,7 +342,7 @@ transform: scaleX(1);
 }
 
 .notice i {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .internet-solution-section {
