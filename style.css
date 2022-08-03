@@ -39,19 +39,21 @@ h1 {
 }
 
 .nav-container {
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   background-color: white;
+  /* border: 1px solid red; */
   width: 100%;
   top: 0;
   right: 0;
   position: fixed;
   z-index: 10000;
-  padding: 0 5rem;
+  padding: 10px 10%;
 }
 
 nav {
   align-items: center;
-  padding: 1rem 0;
+  /* border: 1px solid red; */
+  /* padding: 1rem 0; */
 }
 
 .logo{
@@ -60,17 +62,21 @@ nav {
 
 .nav-list {
   width: 100%;
+  justify-content: flex-end;
+  /* border: 1px solid #01082A; */
 }
 
 .call {
-  text-align: end;
-  position: relative;
+  position: fixed;
+  top: 90vh;
+  right: 20px;
 }
 
 .call-dropdown {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   border: 1px solid #DCDCDE;
+  width: 150px;
   border-radius: 6px;
   height: 80px;
   text-align: center;
@@ -78,76 +84,36 @@ nav {
   top: -100px;
   z-index: 10;
   background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0 5px;
+  padding: 5px;
 }
 
 .show{
-  opacity: 0;
+  opacity: 1;
 }
 
-.copy-div {
+.phone-number-div {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-size: 18px;
-  /* border: 1px solid #0C37F6; */
+  width: 100%;
+  height: 100%;
 }
 
-
-.copy-div input {
-  border: none;
+.phone-number-div button {
+  background-color: #FFFFFF;
   outline: none;
-  font-size: 15px;
+  border: 1px solid #DCDCDE;
+  padding: 3px;
   color: #5E6276;
-  margin: 0;
-  width: 140px;
-}
-
-.copy-div button {
-  border: none;
-  background-color: white;
-  /* border: 1px solid red; */
-}
-
-.copy-div button::before{
-  content: 'Copied';
-  position: absolute;
-  top: -38px;
-  right: 0px;
-  background-color: #0C37F6;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-  display: none;
-}
-
-.copy-div button::after {
-  content: "";
-  position: absolute;
-  top: -20px;
-  right: 20px;
-  height: 10px;
-  width: 10px;
-  transform: rotate(45deg);
-  background-color: #0C37F6;
-  display: none;
-}
-
-.copy-div:active button::before,
-.copy-div:active button::after {
-  display: block;
-}
-
-.copy-icon {
-  color: #C4C4C4;
+  border-radius: 6px;
   cursor: pointer;
-  /* border: 1px solid green; */
 }
+
 
 .nav-list_item {
   list-style-type: none;
+  margin-left: 80px;
 }
 
 .nav-link {
@@ -576,12 +542,6 @@ footer {
 
 .popup-line {
   border-bottom: 1px solid #DDDFE8;
-}
-
-.back-to-top {
-  position: fixed;
-  top: 600px;
-  right: 20px;
 }
 
 

@@ -5,7 +5,7 @@ const services = document.querySelectorAll('.service');
 const serviceDescription = document.querySelectorAll('.service-description');
 const callBtn = document.querySelector('.call-now');
 const callDropDown = document.querySelector('.call-dropdown');
-const body = document.querySelector('body');
+const body = document.querySelectorAll('.container');
 const mobileService = document.querySelectorAll('.mobile-service-display');
 const previous = document.querySelector('.left');
 const next = document.querySelector('.right');
@@ -20,28 +20,13 @@ callBtn.addEventListener('click', (e) => {
   callDropDown.classList.toggle('show');
 })
 
+body.addEventListener('click', () => {
+  if(callDropDown.classList.contains('show')){
+    callDropDown.classList.remove('show')
+  }
 
-const copyDiv = document.querySelectorAll('.copy-div');
-console.log(copyDiv);
-copyDiv.forEach(div => {
-  div.querySelector('button').addEventListener('click', ()=> {
-   let input = div.querySelector('input')
-    console.log(input.value);
-    input.select();
-    navigator.clipboard.writeText(input.value);
-  })
-  // let input = div;
-  // div.querySelector('button').addEventListener('click', () => {
-  //   let input = div.querySelector('input');
-  //   console.log(input)
-  //   let copied = input;
-  //   console.log(copied)
-  //   // copied.select();
-  //   // navigator.clipboard.writeText(copied);
-  //   // copyDiv.classList.add('active')
-  // })
-  
 })
+
 function reviews(name, url, review) {
   
     let html = `<div class="review">
