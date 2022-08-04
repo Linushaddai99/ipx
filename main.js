@@ -5,13 +5,14 @@ const services = document.querySelectorAll('.service');
 const serviceDescription = document.querySelectorAll('.service-description');
 const callBtn = document.querySelector('.call-now');
 const callDropDown = document.querySelector('.call-dropdown');
-const body = document.querySelectorAll('.container');
+const body = document.querySelector('body');
 const mobileService = document.querySelectorAll('.mobile-service-display');
 const previous = document.querySelector('.left');
 const next = document.querySelector('.right');
 const fastRead = document.querySelector('.faq-fastread');
 const hamburgerMenu = document.querySelector('.menu-bar');
 const popup = document.querySelector('.popup-wrapper');
+const countValues = document.querySelectorAll('.internet-num');
 
 
 
@@ -20,12 +21,7 @@ callBtn.addEventListener('click', (e) => {
   callDropDown.classList.toggle('show');
 })
 
-body.addEventListener('click', () => {
-  if(callDropDown.classList.contains('show')){
-    callDropDown.classList.remove('show')
-  }
 
-})
 
 function reviews(name, url, review) {
   
@@ -53,7 +49,7 @@ question.forEach(item => {
   })
 })
 
-// console.log(serviceDescription)
+
 
 function Description(item){
   console.log(item.classList)
@@ -73,7 +69,6 @@ function selected(arr, item) {
 
 
 const serviceList = [];
-
 services.forEach(service => {
   serviceList.push(service);
   service.addEventListener('click', e => {
@@ -83,53 +78,45 @@ services.forEach(service => {
   })
 })
 
-// const element = document.querySelector('.internet-solution-section');
-// const position = element.getBoundingClientRect();
-// const x = position.left;
-// const y = position.top;
-// console.log(x, y)
-
-const countValues = document.querySelectorAll('.internet-num');
-
 
   const callCount = (item, value) => {
-
     if(value > 1000) {
-      let output = 50;
-        const timer = setInterval(() => {
-        item.textContent = `${output}`;
-        if (output === value) {
-            clearInterval(timer);
-        } else{
-            output += 50;
-        }
-    }, 100)
-    } else{let output = 2;
-      const timer = setInterval(() => {
-      item.textContent = `${output}`;
-      if (output === value) {
-          clearInterval(timer);
-      } else{
-          output+=2;
-      }
-  }, 100)
-
+    let output = 50;
+    const timer = setInterval(() => {
+    item.textContent = `${output}`;
+    if (output === value) {
+        clearInterval(timer);
+    } else{
+        output += 50;
     }
-  };
+  }, 100)
+  } else {
+    let output = 2;
+    const timer = setInterval(() => {
+    item.textContent = `${output}`;
+    if (output === value) {
+        clearInterval(timer);
+    } else{
+        output+=2;
+    }
+  }, 100)
+  }
+};
 
-    let happened = false;
-    $(window).scroll(function() {
-      var hT = $('.internet-solution-section').offset().top,
-          hH = $('.internet-solution-section').outerHeight(),
-          wH = $(window).height(),
-          wS = $(this).scrollTop();
-      if (wS > (hT+hH-wH) && !happened){
-        countValues.forEach(num => {
-          callCount(num, Number(num.id));
-          happened = true;
-        })
-      }
-   });
+
+let happened = false;
+$(window).scroll(function() {
+  var hT = $('.internet-solution-section').offset().top,
+      hH = $('.internet-solution-section').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+  if (wS > (hT+hH-wH) && !happened){
+    countValues.forEach(num => {
+      callCount(num, Number(num.id));
+      happened = true;
+    })
+  }
+});
 
 
 
