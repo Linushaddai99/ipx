@@ -1,0 +1,75 @@
+/* .container {
+    max-width: 130rem;
+    padding: 1.2rem 9.9rem;
+    margin: 0 auto;
+    background-color: yellow;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    color: #555;
+    overflow-x: hidden;
+
+}
+
+.since {
+    margin: 2.2rem 2.4rem;
+}
+
+.grid {
+    /* padding: 4.8rem 0 .2rem 0; */
+    padding: 9.6rem 3.8rem;
+    max-width: 164rem;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 5.4rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: green; */
+}
+
+
+
+
+
+.netcabs {
+    height: 100%;
+    width: 100%;
+}
+
+.netcabss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+}
+
+.cabs2 {
+    margin-top: -2.9rem;
+}
+
+.cabs1 {
+    margin-top: 2.1rem;
+}
+
+.cabs4 {
+    margin-top: -2.9rem;
+}
+
+.cabs3 {
+    margin-top: 2.1rem;
+}
