@@ -32,7 +32,7 @@ body {
 
 .grid {
     /* padding: 4.8rem 0 .2rem 0; */
-    padding: 9.6rem 3.8rem;
+    padding: 1.8rem 9.6rem;
     max-width: 164rem;
     margin: 0 auto;
     display: grid;
@@ -55,7 +55,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-
+    height: auto;
+    width: 100%;
 }
 
 .cabs2 {
@@ -73,3 +74,16 @@ body {
 .cabs3 {
     margin-top: 2.1rem;
 }
+
+
+
+/* <div class="box-3 "><div class="flex-icon-head "><img class="icon" src="./img/Vector (2).png" alt=""></div><div class="flex-text"><h2 class="thead">UNLIMITED</h2><p class="para ">With our broadband connection,
+say no to slow internet and enjoy unlimited internet that last you for a month </p>--></div><div class="lea"><a class="learn" href="#">LEARN MORE</a></div></div></div> */
+
+/* <div class="box-2 "><div class="flex-icon-head"><img class="icon" src="./img/Vector.png" alt="">< !-- <h2 class="thead">OFFICE</h2>--></div><div class="flex-text"><h2 class="thead">OFFICE</h2><p class="para ">With our internet connection,
+ you can carry out your office activities with ease.</p>< !-- </div>--><div class="lea"><a class="learn" href="#">LEARN MORE</a></div></div></div> */
+
+/* <div class="box-1 "><div class="flex-icon-head"><img class="icon" src="./img/Vector (1).png" alt=""></div><div class="flex-text "><h2 class="thead">RESIDENCE</h2><p class="para ">Our services are designed to soothe your internet activities such as remote work,
+ netflix,
+ games,
+ etc.</p> </div>--><div class="lea"><a class="learn" href="#">LEARN MORE </div></div></div> */

@@ -90,7 +90,7 @@ TV. */
 }
 
 /* Below 944px (Tabletes) */
-@media(max-width :59em) {
+@media(max-width :998px) {
 
     .hero {
         background-color: yellowgreen;
@@ -105,6 +105,10 @@ TV. */
 
     .hero-boxes {
         width: 100%;
+    }
+
+    .section-hero {
+        padding: 4.8rem 0 26.6rem 0;
     }
 
     .grid {
@@ -162,6 +166,8 @@ TV. */
     .btn-mobile-nav {
         display: block;
     }
+
+
 
     .arrow-sh {
         display: none;
@@ -293,7 +299,7 @@ TV. */
     }
 }
 
-@media(max-width: 44em) {
+@media(max-width: 779px) {
     .letter-box {
         width: 52.3rem;
         height: 23.4rem;
@@ -324,6 +330,10 @@ TV. */
         padding: 2.6rem 3.8rem;
     }
 
+    .netcabss {
+        width: 88%;
+        margin: 0 auto;
+    }
 
     @keyframes move {
         0% {
@@ -331,12 +341,16 @@ TV. */
         }
 
         40% {
-            top: -70px;
+            top: -80px;
         }
 
         60% {
             top: -136px;
         }
+    }
+
+    .grid-animation {
+        height: 37px;
     }
 
     .letter-box {
@@ -351,8 +365,12 @@ TV. */
     }
 
     .second-section {
-        padding: 21.6rem 1.9rem 2.4rem 1.9rem;
+        padding: 1.9rem 1.9rem 2.4rem 1.9rem;
 
+    }
+
+    .sectio-hero {
+        padding: 4.8rem 0 29.6rem 0;
     }
 
     .partnership {
@@ -366,6 +384,22 @@ TV. */
     .parth4 {
         padding: 4.8rem;
     }
+
+
+    .wwd-box {
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .off,
+    .res,
+    .unl {
+        flex-basis: content !important;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
 }
 
 @media(max-width:34em) {
@@ -380,7 +414,7 @@ TV. */
     }
 }
 
-@media(max-width: 23.5em) {
+@media(max-width: 475px) {
     .main {
         align-items: center;
     }
@@ -433,7 +467,7 @@ TV. */
     }
 
     .second-section {
-        padding: 27.6rem 1.9rem 2.4rem 1.9rem;
+        padding: 3.6rem 1.9rem 2.4rem 1.9rem;
     }
 
     @keyframes move {
@@ -465,6 +499,19 @@ TV. */
 
     .cabs3 {
         margin-top: 2.9rem;
+    }
+
+    .off,
+    .res,
+    .unl {
+        flex-basis: content !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .single-logo {
+        height: 1.2rem;
+        width: 1.2rem;
     }
 }
 
