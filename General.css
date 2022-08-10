@@ -1,9 +1,5 @@
-/* .container {
-    max-width: 130rem;
-    padding: 1.2rem 9.9rem;
-    margin: 0 auto;
-    background-color: yellow;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito+Sans:wght@200&family=Palanquin+Dark:wght@700&family=Poppins:wght@100;300;700;800&family=Quicksand:wght@400;600;700&family=Roboto:wght@100;500;700&family=Rubik:wght@300;400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;

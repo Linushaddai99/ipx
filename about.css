@@ -1,26 +1,22 @@
  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
  /* font size(px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito+Sans:wght@200&family=Palanquin+Dark:wght@700&family=Poppins:wght@100;300;700;800&family=Quicksand:wght@400;600;700&family=Roboto:wght@100;500;700&family=Rubik:wght@300;400;600&display=swap');
 
 
- .header {
+ /* .header {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     /* padding-top: 1.2rem; */
      height: 5.1rem;
-     /* background-color: red; */
      padding: 0 7rem;
-     /* margin: 0 2rem; */
      text-align: justify;
-     /* max-width: 130rem; */
      position: relative;
  }
 
  .heder-logo h2 {
      color: #060110;
      font-size: 2.4rem;
-     /* font-family: ; */
  }
 
  .logo {
@@ -35,7 +31,6 @@
      gap: 3.2rem;
      justify-content: space-between;
      align-items: center;
-     /* background-color: blue; */
      transition: all 0.5s
  }
 
@@ -54,13 +49,13 @@
      font-size: 1.6rem;
      transition: all 0.3s;
      /* border-bottom: 1px solid black; */
- }
+ /* } */
 
  .nav-link-but:link,
  .nav-link-but:link {
      color: #000000;
 
- }
+ } */
 
 
 

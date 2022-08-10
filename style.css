@@ -57,11 +57,13 @@ nav {
 .nav-list {
   width: 100%;
   justify-content: flex-end;
+  position: relative;
 }
 
 .nav-list_item {
   list-style-type: none;
   margin-left: 80px;
+  position: relative;
 }
 
 .nav-link {
